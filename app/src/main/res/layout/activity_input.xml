@@ -33,7 +33,7 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:gravity="right"
-            android:text="@string/txtTotalAmount"
+            android:text="@string/lblTotalAmount"
             android:textSize="24sp" />
 
         <EditText

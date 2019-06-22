@@ -3,4 +3,131 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="236dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/lblTotalAmount"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:text="@string/lblTotalAmount"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtTotalAmount"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/lblTaxAmount"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/lblTaxAmount"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtTaxAmount"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/lblTipPercentage"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/lblTipPercentage"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtTipPercentage"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/lblTipAmount"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/lblTipAmount"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtTipAmount"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/lblGrandTotal"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/lblGrandTotal"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtGrandTotal"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:text="@string/btnBackToTipCalc_Input" />
+    </LinearLayout>
+
 </LinearLayout>
