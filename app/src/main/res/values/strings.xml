@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HW2</string>
+    <string name="lblTips">Tips</string>
+    <string name="txtTotalAmount">Total amount</string>
+    <string name="lblTaxAmount">"Tax amount  "</string>
+    <string name="rbtnZeroPercent">0%</string>
+    <string name="rbtnFivePercent">5%</string>
+    <string name="rbtnTenPercent">10%</string>
+    <string name="rbtnTwentyPercent">20%</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnCalculate">Calculate</string>
+
+</resources>
