@@ -2,7 +2,7 @@
     <string name="app_name">Tip_Calculator</string>
     <string name="lblTips">Tips</string>
     <string name="txtTotalAmount">Total amount</string>
-    <string name="lblTaxAmount">"Tax amount:  "</string>
+    <string name="lblTaxAmount">"Tax amount:"</string>
     <string name="rbtnZeroPercent">0%</string>
     <string name="rbtnFivePercent">5%</string>
     <string name="rbtnTenPercent">10%</string>

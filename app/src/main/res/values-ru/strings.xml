@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Калькулятор чаевых</string>
+    <string name="lblTips">Чаевые</string>
+    <string name="txtTotalAmount">Общая сумма</string>
+    <string name="lblTaxAmount">"Сумма налога:"</string>
+    <string name="rbtnZeroPercent">0%</string>
+    <string name="rbtnFivePercent">5%</string>
+    <string name="rbtnTenPercent">10%</string>
+    <string name="rbtnTwentyPercent">20%</string>
+    <string name="btnClear">Очистить</string>
+    <string name="btnCalculate">Подсчитать</string>
+    <string name="lblTotalAmount">Общая сумма:</string>
+    <string name="lblTipPercentage">Чаевые %:</string>
+    <string name="lblTipAmount">Сумма чаевых:</string>
+    <string name="lblGrandTotal">Итоговая сумма:</string>
+    <string name="btnBackToTipCalc_Input">Вернуться к вводу калькулятора чаевых</string>
+
+</resources>
