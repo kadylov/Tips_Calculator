@@ -15,4 +15,6 @@
     <string name="lblTipAmount">Trinkgeldbetrag:</string>
     <string name="lblGrandTotal">Gesamtsumme:</string>
     <string name="btnBackToTipCalc_Input">Zurück zur Eingabe des Trinkgeldrechners</string>
+    <string name="hintInital">0.0</string>
+    <string name="txtTaxAmount">0.00</string>
 </resources>

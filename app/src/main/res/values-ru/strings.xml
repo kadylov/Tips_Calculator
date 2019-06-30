@@ -15,5 +15,7 @@
     <string name="lblTipAmount">Сумма чаевых:</string>
     <string name="lblGrandTotal">Итоговая сумма:</string>
     <string name="btnBackToTipCalc_Input">Вернуться к вводу калькулятора чаевых</string>
+    <string name="hintInital">0.0</string>
+    <string name="txtTaxAmount">0.00</string>
 
 </resources>

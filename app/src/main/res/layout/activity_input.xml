@@ -1,163 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tableLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".CalculatorInputActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/textView12"
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/lblTips"
-            android:textSize="80sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="7dp"
-            android:layout_weight="1"
-            android:gravity="end"
-            android:text="@string/lblTotalAmount"
-            android:textSize="24sp" />
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
 
-        <EditText
-            android:id="@+id/txtTotalAmount"
-            android:layout_width="119dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="45dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:gravity="center|center_vertical"
-            android:importantForAutofill="no"
-            android:inputType="number|numberDecimal"
-            android:textSize="20sp" />
-    </LinearLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/lblTips"
+                    android:textSize="100sp"
+                    android:textStyle="bold" />
+            </TableRow>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="7dp"
-            android:layout_weight="1"
-            android:gravity="end"
-            android:text="@string/lblTaxAmount"
-            android:textSize="24sp" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/txtTaxAmount"
-            android:layout_width="119dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="45dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:gravity="center|center_vertical"
-            android:importantForAutofill="no"
-            android:inputType="number|numberDecimal"
-            android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/lblTotalAmount"
+                    android:textSize="24sp" />
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/txtTotalAmountView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:freezesText="false"
+                    android:gravity="center|center_vertical"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number|numberDecimal"
+                    android:selectAllOnFocus="true"
+                    android:textSize="20sp" />
+            </TableRow>
 
-    <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal|top|center_vertical"
-        android:orientation="vertical">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/lblTaxAmount"
+                    android:textSize="24sp" />
 
-            <RadioButton
-                android:id="@+id/radioButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:checked="true"
-                android:text="@string/rbtnZeroPercent"
-                android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/txtTaxAmountView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center|center_vertical"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="number|numberDecimal"
+                    android:selectAllOnFocus="true"
+                    android:textSize="20sp" />
+            </TableRow>
 
-            <RadioButton
-                android:id="@+id/radioButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:text="@string/rbtnFivePercent"
-                android:textSize="24sp" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
 
-            <RadioButton
-                android:id="@+id/radioButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:text="@string/rbtnTenPercent"
-                android:textSize="24sp" />
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/radioButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:text="@string/rbtnTwentyPercent"
-                android:textSize="24sp" />
+                    <RadioButton
+                        android:id="@+id/rbtnZeroPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/rbtnZeroPercent"
+                        android:textSize="24sp" />
 
-        </RadioGroup>
+                    <RadioButton
+                        android:id="@+id/rbtnFivePercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/rbtnFivePercent"
+                        android:textSize="24sp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:gravity="bottom|center_vertical"
-            android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rbtnTenPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/rbtnTenPercent"
+                        android:textSize="24sp" />
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:text="@string/btnClear" />
+                    <RadioButton
+                        android:id="@+id/rbtnTwentyPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/rbtnTwentyPercent"
+                        android:textSize="24sp" />
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:text="@string/btnCalculate" />
-        </LinearLayout>
+                </RadioGroup>
+            </TableRow>
 
-    </LinearLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="44dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
 
-</LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="clearForm"
+                        android:text="@string/btnClear" />
+
+                    <Button
+                        android:id="@+id/btnCalculate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="calculateTip"
+                        android:text="@string/btnCalculate" />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

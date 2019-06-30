@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Tip_Calculator</string>
     <string name="lblTips">Tips</string>
-    <string name="txtTotalAmount">Total amount</string>
     <string name="lblTaxAmount">"Tax amount:"</string>
     <string name="rbtnZeroPercent">0%</string>
     <string name="rbtnFivePercent">5%</string>
@@ -14,5 +13,8 @@
     <string name="lblTipAmount">Tip amount:</string>
     <string name="lblGrandTotal">Grand Total:</string>
     <string name="btnBackToTipCalc_Input">Back to Tip Calculator Input</string>
+    <string name="txtTotalAmount">" 0.00"</string>
+    <string name="hintInital">0.00</string>
+    <string name="txtTaxAmount">0.00</string>
 
 </resources>
