@@ -80,7 +80,7 @@ public class CalculatorInputActivity extends AppCompatActivity {
             totalAmount = taxAmount = "0.00";
         else if (totalAmount.isEmpty())
             totalAmount = "0.00";
-        else
+        else if(taxAmount.isEmpty())
             taxAmount = "0.00";
 
 
